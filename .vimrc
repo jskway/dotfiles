@@ -9,7 +9,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
-Plug 'altercation/Vim-colors-solarized'
+Plug 'morhetz/gruvbox'
 Plug 'w0rp/ale'
 Plug 'pangloss/vim-javascript'
 
@@ -43,13 +43,9 @@ call plug#end()
 " enable syntax processing
 syntax enable
 
+" color scheme
+colorscheme gruvbox
 set background=dark
-" solarized 
-let g:solarized_termcolors=16
-let g:solarized_visibility="high"
-let g:solarized_contrast="high"
-let g:solarized_style="dark"
-colorscheme solarized
 
 " number of visual spaces per tab
 set tabstop=4
