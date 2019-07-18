@@ -12,6 +12,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'w0rp/ale'
 Plug 'pangloss/vim-javascript'
 Plug 'chriskempson/base16-vim'
+Plug 'mxw/vim-jsx'
 
 " After this is configured, :ALEFix will try and fix your JS code with ESLint.
 let g:ale_linters = {
