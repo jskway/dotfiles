@@ -9,9 +9,9 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
-Plug 'morhetz/gruvbox'
 Plug 'w0rp/ale'
 Plug 'pangloss/vim-javascript'
+Plug 'chriskempson/base16-vim'
 
 " After this is configured, :ALEFix will try and fix your JS code with ESLint.
 let g:ale_linters = {
@@ -44,7 +44,7 @@ call plug#end()
 syntax enable
 
 " color scheme
-colorscheme gruvbox
+colorscheme base16-default-dark
 set background=dark
 
 " number of visual spaces per tab
