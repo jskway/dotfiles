@@ -109,6 +109,9 @@ nnoremap k gk
 " Backspace deletes like most programs in insert mode
 set backspace=2
 
+" NERDTree shortcut
+:command NE NERDTreeToggle
+
 " Set syntax highlighting for specific file types
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd BufRead,BufNewFile .{jscs,jshint,eslint}rc set filetype=json
