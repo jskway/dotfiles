@@ -13,6 +13,7 @@ Plug 'w0rp/ale'
 Plug 'pangloss/vim-javascript'
 Plug 'chriskempson/base16-vim'
 Plug 'mxw/vim-jsx'
+Plug 'ryanoasis/vim-devicons'
 
 " After this is configured, :ALEFix will try and fix your JS code with ESLint.
 let g:ale_linters = {
@@ -40,6 +41,9 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
 " Initialize plugin system
 call plug#end()  
+
+set encoding=UTF-8
+set guifont=Meslo\ LGS:h14
 
 " enable syntax processing
 syntax enable
