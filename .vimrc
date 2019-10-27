@@ -10,10 +10,9 @@ call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 Plug 'w0rp/ale'
-Plug 'pangloss/vim-javascript'
 Plug 'morhetz/gruvbox'
-Plug 'mxw/vim-jsx'
 Plug 'ryanoasis/vim-devicons'
+Plug 'sheerun/vim-polyglot'
 
 " After this is configured, :ALEFix will try and fix your JS code with ESLint.
 let g:ale_linters = {
