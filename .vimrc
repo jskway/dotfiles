@@ -30,6 +30,7 @@ let g:ale_fixers = {
 \   'scss': ['prettier'],
 \   'css': ['prettier'],
 \   'c': ['clangtidy'],
+\   'html': ['prettier']
 \}
 
 " Set this setting in vimrc if you want to fix files automatically on save.
