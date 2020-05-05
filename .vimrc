@@ -23,6 +23,7 @@ let g:ale_linters = {
 \   'css': ['prettier'],
 \   'markdown': ['mdl'],
 \   'c': ['clangtidy'],
+\   'python': ['pylint'],
 \}
 
 let g:ale_fixers = {
@@ -31,7 +32,8 @@ let g:ale_fixers = {
 \   'css': ['prettier'],
 \   'c': ['clangtidy'],
 \   'html': ['prettier'],
-\   'markdown': ['prettier']
+\   'markdown': ['prettier'],
+\   'python': ['yapf'],
 \}
 
 " Set this setting in vimrc if you want to fix files automatically on save.
@@ -147,6 +149,7 @@ autocmd Filetype javascript setlocal ts=2 sw=2  expandtab
 autocmd Filetype json setlocal ts=2 sw=2  expandtab
 autocmd Filetype markdown setlocal ts=2 sw=2 expandtab
 autocmd Filetype sql setlocal ts=4 sw=4 expandtab
+autocmd Filetype py setlocal ts=4 sw=4 expandtab
 
 au BufNewFile,BufRead *.py
     \ set tabstop=4
