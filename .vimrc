@@ -151,17 +151,6 @@ autocmd Filetype markdown setlocal ts=2 sw=2 expandtab
 autocmd Filetype sql setlocal ts=4 sw=4 expandtab
 autocmd Filetype py setlocal ts=4 sw=4 expandtab
 
-au BufNewFile,BufRead *.py
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
-
-" flag unnecessary whitespace
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 " coc.nvim configurations 
 
