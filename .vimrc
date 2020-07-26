@@ -18,6 +18,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " After this is configured, :ALEFix will try and fix your JS code with ESLint.
 let g:ale_linters = {
 \   'javascript': ['eslint'],
+\   'typescript': ['eslint'],
 \   'html': ['tidy'],
 \   'scss': ['prettier'],
 \   'css': ['prettier'],
@@ -28,6 +29,7 @@ let g:ale_linters = {
 
 let g:ale_fixers = {
 \   'javascript': ['eslint', 'prettier'],
+\   'typescript': ['eslint', 'prettier'],
 \   'scss': ['prettier'],
 \   'css': ['prettier'],
 \   'c': ['clangtidy'],
@@ -146,6 +148,7 @@ autocmd Filetype scss setlocal ts=2 sw=2 expandtab
 autocmd Filetype less setlocal ts=2 sw=2 expandtab
 autocmd Filetype css setlocal ts=2 sw=2 expandtab
 autocmd Filetype javascript setlocal ts=2 sw=2  expandtab
+autocmd Filetype typescript setlocal ts=2 sw=2  expandtab
 autocmd Filetype json setlocal ts=2 sw=2  expandtab
 autocmd Filetype markdown setlocal ts=2 sw=2 expandtab
 autocmd Filetype sql setlocal ts=4 sw=4 expandtab
