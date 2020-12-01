@@ -14,6 +14,8 @@ Plug 'morhetz/gruvbox'
 Plug 'ryanoasis/vim-devicons'
 Plug 'sheerun/vim-polyglot'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'pantharshit00/vim-prisma'
+Plug 'jparise/vim-graphql'
 
 " After this is configured, :ALEFix will try and fix your JS code with ESLint.
 let g:ale_linters = {
