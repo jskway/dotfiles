@@ -5,6 +5,10 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 export PATH="/usr/local/opt/krb5/bin:$PATH"
 export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+export PATH=/home/ksc/bin:$PATH
+
+export MAVEN_HOME=/Library/apache-maven-3.6.3
+export PATH=$MAVEN_HOME/bin:$PATH
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -31,6 +35,13 @@ export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
 
 
 alias config='/usr/bin/git --git-dir=/Users/ksc/.cfg/ --work-tree=/Users/ksc'
+
+# DeepDyve
+REPO=https://svn-art.usw2.infovell.com/repo/code/ivsearch
+export REPO
+
+SVN_EDITOR=vim
+export SVN_EDITOR
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/ksc/.oh-my-zsh"
@@ -131,3 +142,9 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# For Lambda School Java Modules
+export OAUTHCLIENTID=lambda-client
+export OAUTHCLIENTSECRET=lambda-secret
+
+
