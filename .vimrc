@@ -15,9 +15,11 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'sheerun/vim-polyglot'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'pantharshit00/vim-prisma'
-Plug 'jparise/vim-graphql'
 
-" After this is configured, :ALEFix will try and fix your JS code with ESLint.
+" Disales all LSP linters run by ALE, so coc.nvim will handle it
+let g:ale_disable_lsp = 1
+
+"After this is configured, :ALEFix will try and fix your JS code with ESLint.
 let g:ale_linters = {
 \   'javascript': ['eslint'],
 \   'typescript': ['eslint'],
@@ -27,6 +29,8 @@ let g:ale_linters = {
 \   'markdown': ['mdl'],
 \   'c': ['clangtidy'],
 \   'python': ['pylint'],
+\   'java': ['eclipselsp'],
+\   'php': ['psalm'],
 \}
 
 let g:ale_fixers = {
@@ -143,6 +147,7 @@ call NERDTreeHighlightFile('bashprofile', 'Gray', 'none', '#686868', '#151515')
 " Set syntax highlighting for specific file types
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd BufRead,BufNewFile .{jscs,jshint,eslint}rc set filetype=json
+autocmd BufRead,BufNewFile *.tpl set filetype=php
 
 " Set whitespace preferences
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
@@ -152,9 +157,11 @@ autocmd Filetype css setlocal ts=2 sw=2 expandtab
 autocmd Filetype javascript setlocal ts=2 sw=2  expandtab
 autocmd Filetype typescript setlocal ts=2 sw=2  expandtab
 autocmd Filetype json setlocal ts=2 sw=2  expandtab
+autocmd Filetype php setlocal ts=4 sw=4  expandtab
 autocmd Filetype markdown setlocal ts=2 sw=2 expandtab
 autocmd Filetype sql setlocal ts=4 sw=4 expandtab
 autocmd Filetype py setlocal ts=4 sw=4 expandtab
+autocmd Filetype java setlocal ts=4 sw=4 expandtab
 
 
 " coc.nvim configurations 
